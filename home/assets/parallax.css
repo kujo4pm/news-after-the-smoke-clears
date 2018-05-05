@@ -1,26 +1,28 @@
 /* Global Styles */
 
-@import url("//fonts.googleapis.com/css?family=Poiret+One|Josefin+Sans");
+@font-face {
+    font-family: LeituraNews;
+    src: url(../fonts/LeituraNewsRoman1.otf);
+}
 
 html,body {
-color:#fddaec;
-font-family:"Josefin Sans", sans-serif;
-font-size:100%;
-height:100%;
-line-height:1.45;
+    color: #ffffff;
+    font-family: georgia,"times new roman",times,serif;
+    font-size: 100%;
+    height: 100%;
+    line-height: 1.45;
 }
 
 
 /* Video Overlay */
 
 #overlay {
-background-color:rgba(0,0,0,.65);
-height:100%;
-left:0;
-position:relative;
-top:0;
-transition:background-color 300ms ease;
-width:100%;
+    height:100%;
+    left:0;
+    position:relative;
+    top:0;
+    transition:background-color 300ms ease;
+    width:100%;
 }
 
 .fade { background-color:rgba(0,0,0,.85) !important; }
@@ -29,68 +31,118 @@ width:100%;
 /* Hero Video + Fallback */
 
 #hero-vid {
-backface-visibility:hidden;
-background:url("http://www.markhillard.com/sandbox/media/polina.jpg") no-repeat scroll 0 0 #000;
-background-size:cover;
-bottom:0;
-height:auto;
-min-height:100%;
-min-width:100%;
-perspective:1000;
-position:fixed;
-right:0;
-width:auto;
-z-index:-1;
+    backface-visibility:hidden;
+    background:url("http://www.markhillard.com/sandbox/media/polina.jpg") no-repeat scroll 0 0 #000;
+    background-size:cover;
+    bottom:0;
+    height:auto;
+    min-height:100%;
+    min-width:100%;
+    perspective:1000;
+    position:fixed;
+    right:0;
+    width:auto;
+    z-index:-1;
 }
 
 #hero-pic {
-display:block;
-height:auto;
-width:100%;
+    display:block;
+    height:auto;
+    width:100%;
 }
 
 #state {
-bottom:0;
-cursor:pointer;
-font-size:2.25rem;
-left:0;
-line-height:1;
-padding:2rem 2.5rem 1.65rem;
-position:absolute;
+    bottom:0;
+    cursor:pointer;
+    font-size:2.25rem;
+    left:0;
+    line-height:1;
+    padding:2rem 2.5rem 1.65rem;
+    position:absolute;
 }
 
 
 /* Content Styles */
 
 #title {
-backface-visibility:hidden;
-left:0;
-perspective:1000;
-position:fixed;
-width:100%;
+    backface-visibility:hidden;
+    z-index: 4;
+    position: absolute;
+    width: calc(100% - 40px);
+    left: 20px;
+    top: initial;
+    bottom: 2em;
+    font-family: LeituraNews;
+    text-shadow: 1px 1px #888;
 }
 
-#title h1 {
-background-color:rgba(0,0,0,.5);
-font-family:"Poiret One", sans-serif;
-font-size:2.5rem;
-padding:1rem 1.75rem;
+#title .byline {
+    font-size: 0.8em;
 }
+#title h1 {
+    font-size: 2.5rem;
+    padding: 1rem 1.75rem;
+    margin: 0;
+    font-weight: 100;
+}
+
 
 #content {
-background-color:#151515;
-padding:2.5rem;
-position:relative;
-z-index:1;
+    background: #ffffff;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    margin: 0;
+    left: 0;
 }
 
-#content p {
-font-size:1.25rem;
-letter-spacing:.02rem;
-margin-bottom:1.3rem;
+#content #main p {
+    font-size:1.25rem;
+    letter-spacing:.02rem;
+    margin-bottom:1.3rem;
+    color: #000000;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#menu ul {
+    list-style-type: none;
+    margin: 0 10px 0 0;
+    padding: 0;
+    overflow: hidden;
+    color: #ffffff;
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    padding-left: 10px;
 }
 
+#menu ul li:not(:last-child) {
+    margin-right: 10px;
+}
 
+#menu ul li {
+    cursor: pointer;
+}
+footer {
+    background: #000000;
+    position: absolute;
+    width: 100%;
+}
+footer p {
+    padding-left:10px;
+}
+
+.article-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: 1;
+}
 /* Media Queries */
 
 @media only screen and (max-width:768px) {
@@ -102,10 +154,27 @@ margin-bottom:1.3rem;
 
 @media only screen and (min-width:769px) {
     .visible-mobile,.visible-tablet,.hidden-desktop { display:none !important; }
+    #menu
+    {
+        background: rgba(0,0,0,0.55);
+    }
 }
 
 @media only screen and (min-width:480px) and (max-width:768px) {
-    .visible-mobile,.hidden-tablet,.visible-desktop { display:none !important; }
+    .visible-mobile,
+    .hidden-tablet,
+    .visible-desktop
+        {
+            display:none !important;
+        }
+
+}
+
+@media only screen and (max-width:768px) {
+    #menu
+        {
+           background: #000000;
+        }
 }
 
 @media only screen and (max-width:479px) {
