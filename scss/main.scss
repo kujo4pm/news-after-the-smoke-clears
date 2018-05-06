@@ -1,17 +1,26 @@
-/* Global Styles */
+/* variables */
 
+
+$black: #000000;
+$white: #FFFFFF;
+
+/* Global Styles */
 @font-face {
     font-family: LeituraNews;
     src: url(../fonts/LeituraNewsRoman1.otf);
 }
 
 html,body {
-    color: #ffffff;
+    color: $white;
     font-family: georgia,"times new roman",times,serif;
     font-size: 100%;
     height: 100%;
     line-height: 1.45;
 }
+
+img, video {
+    max-width: 100%;
+  }
 
 
 /* Video Overlay */
@@ -43,6 +52,7 @@ html,body {
     right:0;
     width:auto;
     z-index:-1;
+    max-width: unset;
 }
 
 #hero-pic {
@@ -88,7 +98,7 @@ html,body {
 
 
 #content {
-    background: #ffffff;
+    background: $white;
     position: absolute;
     z-index: 1;
     width: 100%;
@@ -100,16 +110,17 @@ html,body {
     font-size:1.25rem;
     letter-spacing:.02rem;
     margin-bottom:1.3rem;
-    color: #000000;
+    color: $black;
     margin-left: 100px;
     margin-right: 100px;
 }
+
 #menu ul {
     list-style-type: none;
     margin: 0 10px 0 0;
     padding: 0;
     overflow: hidden;
-    color: #ffffff;
+    color: $white;
     display: flex;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-transform: uppercase;
@@ -124,24 +135,29 @@ html,body {
     cursor: pointer;
 }
 footer {
-    background: #000000;
+    background: $black;
     position: absolute;
     width: 100%;
-}
-footer p {
-    padding-left:10px;
 }
 
-.article-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+.image-caption {
+
+}
+
+.article-image {
+    background: url('../images/vermont.png');
+    width:100%;
+    /* Full height */
+    height: 100vh; 
+    /* Center and scale the image nicely */
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
-    z-index: 1;
+}
+
+footer p {
+    padding-left:10px;
+    font-size: 0.6em;
 }
 /* Media Queries */
 
@@ -173,7 +189,7 @@ footer p {
 @media only screen and (max-width:768px) {
     #menu
         {
-           background: #000000;
+           background: $black;
         }
 }
 

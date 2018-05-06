@@ -1,0 +1,24 @@
+{
+  "name": "news-after-the-smoke-clears",
+  "version": "1.0.0",
+  "description": "This is the companion website to the After the Smoke Clears radio series for BZE",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/main.scss   public/css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kujo4pm/news-after-the-smoke-clears.git"
+  },
+  "author": "Kurt Johnson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kujo4pm/news-after-the-smoke-clears/issues"
+  },
+  "homepage": "https://github.com/kujo4pm/news-after-the-smoke-clears#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.0"
+  }
+}
