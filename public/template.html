@@ -1,7 +1,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="./css/main.css" />
-        <script src="js/jquery-3.3.1.min.js"></script>
+        <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet"/>
     </head>
     <body>
         <div id="overlay">
@@ -44,7 +44,13 @@
                 <p>    
                     Oh. You need a little dummy text for your mockup? How quaint.
                 </p>
-                <div class="article-image">
+                <div
+                    id="vermont"
+                    data-aos="fade"
+                    data-aos-anchor="#image-anchor"
+                    class="article-image"
+                >
+                    <div id="image-anchor"></div>
                     <p class="image-caption">This is my motorcycle trip through Vermont</p>
                 </div>
                 <p>    
@@ -66,9 +72,16 @@
                 <p>    
                     Oh. You need a little dummy text for your mockup? How quaint.
                 </p>
-                <video class="article-vid" poster="./images/loy-yang.JPG" autoplay loop muted>
-                    <source type="video/mp4" src="./video/MVI_5835.MP4"></source>
-                </video>
+                <div
+                    data-aos="fade"
+                    data-aos-anchor="#video-anchor"
+                    class="video-container"
+                >
+                    <div id="video-anchor"></div>
+                    <video class="article-vid" poster="./images/loy-yang.JPG" autoplay loop muted>
+                        <source type="video/mp4" src="./video/MVI_5835.MP4"></source>
+                    </video>
+                </div>
                 <p>    
                     I bet you're still using Bootstrap too...</p>
                 <p>Lorem ipsum dolor amet farm-to-table food truck skateboard, waistcoat vice deep v williamsburg health goth ramps. Sriracha yr tousled subway tile microdosing, lomo master cleanse paleo prism trust fund pug hot chicken succulents. Flexitarian art party swag, woke schlitz plaid prism umami gluten-free cardigan four dollar toast pinterest pickled fixie hot chicken. Retro poutine hashtag whatever scenester tattooed mumblecore DIY hammock migas literally offal cornhole tumeric viral. Cloud bread farm-to-table iPhone taxidermy distillery. Vegan brooklyn meditation, farm-to-table offal art party gastropub street art celiac fixie. Affogato copper mug pour-over street art tumblr vinyl kale chips iPhone williamsburg.
@@ -93,6 +106,13 @@
                 <p>Sponsored by Climate Action Network: All rights reserved Kurt Johnson 2018</p>
             </footer>
         </div>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+        <script lang="text/javascript">
+            AOS.init({
+
+            });
+        </script>
         <script src="./js/scroll.js" ></script>
     </body>
 </html>
