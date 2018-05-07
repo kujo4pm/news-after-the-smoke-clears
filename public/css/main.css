@@ -118,7 +118,6 @@ footer {
 .video-container {
   width: 100%;
   max-width: 100%;
-  /* Full height */
   height: 100vh;
   background: #000000;
   display: flex;

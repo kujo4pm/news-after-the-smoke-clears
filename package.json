@@ -22,6 +22,7 @@
     "node-sass": "^4.9.0"
   },
   "dependencies": {
-    "aos": "^2.2.0"
+    "aos": "^2.2.0",
+    "is-in-viewport": "^3.0.0"
   }
 }
