@@ -10,9 +10,20 @@ $white: #FFFFFF;
     src: url(../fonts/LeituraNewsRoman1.otf);
 }
 
+@font-face {
+    font-family: Modern219;
+    src: url(../fonts/modern-219.woff2);
+}
+
+@font-face {
+    font-family: LeMondeJournal;
+    src: url(../fonts/lemonde-journal.woff2);
+}
+
+
 html,body {
     color: $white;
-    font-family: georgia,"times new roman",times,serif;
+    font-family: LeMondeJournal, georgia, serif;
     font-size: 100%;
     height: 100%;
     line-height: 1.45;
@@ -82,7 +93,7 @@ img, video {
     left: 20px;
     top: initial;
     bottom: 2em;
-    font-family: LeituraNews;
+    font-family: Modern219;
     text-shadow: 1px 1px #888;
 }
 
@@ -151,7 +162,7 @@ footer {
 }
 
 .article-image {
-    background: url('../images/vermont.png');
+    background: url('../images/loy-yang.JPG');
     width:100%;
     max-width: 100%;
     height: 100vh;
