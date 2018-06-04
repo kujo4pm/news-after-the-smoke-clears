@@ -1,6 +1,7 @@
 /* variables */
 $black: #000000;
 $white: #FFFFFF;
+$grey: #ADADAD;
 
 /* fonts */
 @font-face {
@@ -8,13 +9,73 @@ $white: #FFFFFF;
   src: url(../fonts/lemonde-journal.woff2);
 }
 
+@font-face {
+  font-family: Metropolis-Thin;
+  src: url(../fonts/Metropolis-Thin.otf);
+}
+
+
 /* Global Styles */
-html,body {
+html, body {
   font-family: LeMondeJournal, serif;
   font-size: 100%;
-  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
+
+/* text details */
+article {
+  line-height: 1.45;
+  margin: 10px 20%;
+}
+
+.article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+}
+/* images and video */
 
 img, video {
   max-width: 100%;
+}
+
+figure, header {
+  background-color: $black;
+  margin: 0;
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+figure img {
+  max-width: 100%;
+  height: auto;
+}
+
+figcaption {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  color: $white;
+}
+
+/* header */
+#header-text {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  color: $grey;
+  font-family: Metropolis-Thin, serif;
+}
+#header {
+  font-size: 2em;
+}
+header video {
+  min-width: 100%;
+  min-height: 100%;
 }
