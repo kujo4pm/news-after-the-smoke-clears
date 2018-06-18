@@ -10,7 +10,8 @@
 /* Global Styles */
 html, body {
   font-family: 'PT Serif', serif;
-  font-size: 12pt;
+  font-size: 100%;
+  font-size: 1.1em;
   color: #001030;
   width: 100%;
   margin: 0;
@@ -24,7 +25,8 @@ article {
 h1 {
   color: #624C37;
   font-family: 'PT Sans', sans-serif;
-  font-size: 2.3em; }
+  font-size: 2.3em;
+  line-height: 1rem; }
 
 aside {
   float: right;
@@ -46,14 +48,15 @@ aside blockquote {
   min-height: 100%; }
 
 /* images and video */
-img, video {
+figure img,
+article video {
   max-width: 100%;
   height: 100%;
   object-fit: cover; }
 
 figure, header {
   background-color: #000000;
-  margin: 0;
+  margin: 0 0 10px 0;
   position: relative;
   height: 100%;
   background-position: center;
@@ -63,28 +66,32 @@ figure, header {
   align-items: center;
   justify-content: center; }
 
-figure img {
-  width: 100%;
+figure {
+  margin-top: 20px;
   height: 110%; }
+
+figure img {
+  width: 100%; }
 
 figcaption {
   position: absolute;
   bottom: 20px;
-  height: 31px;
-  padding-left: 50px;
+  padding-left: 29px;
   padding-top: 6px;
   padding-bottom: 5px;
   right: 0px;
-  font-size: 1.4em;
-  width: 20%;
+  font-size: 0.8em;
+  width: 25%;
   background-color: rgba(255, 255, 255, 0.4);
-  font-family: 'PT Sans', sans-serif; }
+  font-family: 'PT Sans', sans-serif;
+  text-align: right;
+  padding-right: 15px; }
 
 #fig-quote {
   position: absolute;
   top: 12%;
   right: 40px;
-  font-size: 1.8em;
+  font-size: 1.25em;
   width: 20%;
   color: #DDDDDD;
   font-family: 'PT Sans', sans-serif;
@@ -111,6 +118,47 @@ header {
   font-family: 'Poppins', sans-serif;
   margin-top: 0px;
   text-align: right; }
+
+/* nav */
+nav {
+  padding: 20px 0 520px; }
+
+nav ul#episode-list {
+  display: flex;
+  align-items: stretch;
+  flex-direction: row;
+  font-family: 'PT Serif', serif;
+  color: #962E47;
+  text-align: right; }
+
+nav h1 {
+  margin-left: 20%;
+  margin-right: 20%; }
+
+nav div.thumb {
+  float: none;
+  padding-left: 0; }
+
+div.thumb img {
+  height: auto;
+  max-width: 100%; }
+
+nav li {
+  list-style-type: none;
+  margin: 1rem auto;
+  background-color: #fff;
+  max-width: 100%;
+  box-shadow: 0 2px 2px #DDDDDD;
+  width: 9.5rem; }
+
+nav h6.episode-kicker {
+  font-size: 0.6em;
+  padding: 1em 1em 0 0;
+  font-family: 'Poppins', sans-serif; }
+
+nav h2.episode-title {
+  font-size: 0.85em;
+  padding: 0 1em 0 0; }
 
 /* footer */
 footer {
