@@ -1,27 +1,28 @@
 /* variables */
 $black: #000000;
 $white: #FFFFFF;
-$grey: #ADADAD;
-$grey-white: #CCCCCC;
-$storm-grey: #747880;
-$wine: #8E1600;
+$grey: #DDDDDD;
+$storm-blue: #7BA0BE;
+$earth-brown: #624C37;
+$wine: #962E47;
+$black-blue: #001030;
 
 /* fonts */
-@font-face {
-  font-family: LeMondeJournal;
-  src: url(../fonts/lemonde-journal.woff2);
-}
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700|PT+Serif+Caption|PT+Serif:400,700|Poppins');
 
-@font-face {
-  font-family: Metropolis-Thin;
-  src: url(../fonts/Metropolis-Thin.otf);
-}
 
+/*
+  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Serif', serif;
+  font-family: 'PT Serif Caption', serif;
+  font-family: 'Poppins', sans-serif;
+*/
 
 /* Global Styles */
 html, body {
-  font-family: LeMondeJournal, serif;
-  font-size: 100%;
+  font-family: 'PT Serif', serif;
+  font-size: 12pt;
+  color: $black-blue;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -33,16 +34,23 @@ article {
   margin: 10px 20%;
 }
 
+h1 {
+  color: $earth-brown;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 2.3em;
+}
+
 aside {
   float: right;
-  color: $storm-grey;
-  width: 200px;
+  color: $storm-blue;
+  width: 30%;
+  font-size: 1.2em;
   font-style: italic;
 }
 
 aside blockquote {
   margin-top: 10px;
-  border-left: 1px solid $storm-grey;
+  border-left: 1px solid $storm-blue;
   margin-left: 20px;
   padding-left: 20px;
 }
@@ -52,7 +60,6 @@ aside blockquote {
   align-items: center;
   justify-content: center;
   min-height: 100%;
-  font-size: 108%;
 }
 /* images and video */
 
@@ -67,6 +74,9 @@ figure, header {
   margin: 0;
   position: relative;
   height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -74,36 +84,65 @@ figure, header {
 
 figure img {
   width: 100%;
+  height: 110%;
 }
 
 figcaption {
   position: absolute;
-  bottom: 8px;
-  width: calc(100% - 10px);
-  padding-left: 10px;
-  padding-top: 5px;
+  bottom: 20px;
+  height: 31px;
+  padding-left: 50px;
+  padding-top: 6px;
   padding-bottom: 5px;
-  left: 0px;
-  color: $grey-white;
-  font-size: 1.8em;
-  background-color: rgba(0, 0, 0, 0.7);
-  opacity: 0;
+  right: 0px;
+  font-size: 1.4em;
+  width: 20%;
+  background-color: rgba(255, 255, 255, 0.4);
+  font-family: 'PT Sans', sans-serif;
   // -webkit-transition: opacity .5s ease-in-out;
   // -moz-transition: opacity .5s ease-in-out;
   // -o-transition: opacity .5s ease-in-out;
   // transition: opacity .5s ease-in-out;
 }
 
+#fig-quote {
+  position: absolute;
+  top: 12%;
+  right: 40px;
+  font-size: 1.8em;
+  width: 20%;
+  color: $grey;
+  font-family: 'PT Sans', sans-serif;
+  font-style: italic;
+  // -webkit-transition: opacity .5s ease-in-out;
+  // -moz-transition: opacity .5s ease-in-out;
+  // -o-transition: opacity .5s ease-in-out;
+  // transition: opacity .5s ease-in-out;
+}
 /* header */
+
+header {
+  background-image: url('../images/header-splash.png');
+}
+
 #header-text {
   position: absolute;
   bottom: 8px;
-  left: 16px;
+  right: 16px;
+  margin-top: 0px;
   color: $white;
-  font-family: Metropolis-Thin, serif;
+  font-family: 'PT Sans', sans-serif;
 }
 #header {
   font-size: 2em;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 0;
+}
+
+#header-byline {
+  font-family: 'Poppins', sans-serif;
+  margin-top: 0px;
+  text-align: right;
 }
 
 /* footer */ 
