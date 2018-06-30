@@ -26,7 +26,7 @@ h1 {
   color: #624C37;
   font-family: 'PT Sans', sans-serif;
   font-size: 2.3em;
-  line-height: 1rem; }
+  line-height: 1em; }
 
 aside {
   float: right;
@@ -48,13 +48,14 @@ aside blockquote {
   min-height: 100%; }
 
 /* images and video */
-figure img,
-article video {
+figure.wash img,
+figure.wash video {
   max-width: 100%;
-  height: 100%;
-  object-fit: cover; }
+  object-fit: cover;
+  width: 100%;
+  height: 100%; }
 
-figure, header {
+figure.wash, header {
   background-color: #000000;
   margin: 0 0 10px 0;
   position: relative;
@@ -66,14 +67,14 @@ figure, header {
   align-items: center;
   justify-content: center; }
 
-figure {
-  margin-top: 20px;
+figure.wash {
   height: 110%; }
 
-figure img {
-  width: 100%; }
+figure.wash img {
+  width: 100%;
+  height: 100%; }
 
-figcaption {
+figure.wash figcaption {
   position: absolute;
   bottom: 20px;
   padding-left: 29px;
@@ -87,7 +88,7 @@ figcaption {
   text-align: right;
   padding-right: 15px; }
 
-#fig-quote {
+figure.wash .fig-quote {
   position: absolute;
   top: 12%;
   right: 40px;
@@ -96,6 +97,25 @@ figcaption {
   color: #DDDDDD;
   font-family: 'PT Sans', sans-serif;
   font-style: italic; }
+
+.article-image figcaption {
+  color: #7BA0BE;
+  font-family: 'PT Serif', serif;
+  text-align: center;
+  font-size: 0.8em; }
+
+.article-image {
+  width: 310px;
+  float: left;
+  margin: 5px 10px 5px 10px;
+  cursor: pointer; }
+
+.article-image img {
+  width: 100%;
+  height: auto; }
+
+.right {
+  float: right; }
 
 /* header */
 header {
@@ -119,9 +139,30 @@ header {
   margin-top: 0px;
   text-align: right; }
 
+.interview {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center; }
+
+.interview figcaption {
+  text-align: center;
+  padding: 10px 20px 10px 20px;
+  font-family: 'PT Serif', serif;
+  font-size: 1.32em; }
+
+.interview figcaption .quote {
+  font-size: 1.1em;
+  font-weight: 600;
+  font-style: italic; }
+
+.interview video,
+.interview figcaption {
+  width: 50%; }
+
 /* nav */
 nav {
-  padding: 20px 0 520px; }
+  padding: 20px 0 20px; }
 
 nav ul#episode-list {
   display: flex;
