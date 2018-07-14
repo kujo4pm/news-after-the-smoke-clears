@@ -18,7 +18,7 @@ html, body {
   padding: 0; }
 
 .hidden {
-  display: none; }
+  display: none !important; }
 
 /* text details */
 article {
