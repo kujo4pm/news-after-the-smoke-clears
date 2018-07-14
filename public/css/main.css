@@ -17,6 +17,9 @@ html, body {
   margin: 0;
   padding: 0; }
 
+.hidden {
+  display: none; }
+
 /* text details */
 article {
   line-height: 1.45;
@@ -143,6 +146,41 @@ header {
   font-family: 'Poppins', sans-serif;
   margin-top: 0px;
   text-align: right; }
+
+/* share panel */
+#share {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding-right: 5px;
+  padding-top: 5px;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 0.9em; }
+
+#share-link {
+  cursor: pointer;
+  padding: 2px; }
+
+#share-link:hover {
+  background: rgba(255, 255, 255, 0.4); }
+
+#share-panel {
+  display: flex;
+  background: rgba(255, 255, 255, 0.4);
+  font-size: 0.8em; }
+
+#share-panel ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px; }
+
+#share-panel li {
+  margin-top: 5px;
+  cursor: pointer; }
+
+a.share {
+  color: inherit;
+  text-decoration: none; }
 
 /* interview */
 figure.interview {
