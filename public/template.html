@@ -1,5 +1,6 @@
 <html>
     <head>
+      <title>After the Smoke Clears: A story about the Latrobe Valley, Victoria, Australia</title>
       <link rel="stylesheet" href="./css/main.css" />
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.js'></script>
@@ -12,12 +13,35 @@
           <p id="header">After the Smoke Clears</p>
           <p id="header-byline">&lt;38.2551° S, 146.6126° E&gt;</p>
         </div>
-        <div id="share fa fa-share">
-        </div>
         <!-- <video poster="./images/video-cover.jpg" autoplay loop muted>
           <source type="video/mp4" src="./video/yolang1.mp4"></source>
         </video> -->
       </header>
+      <div id="share">
+          <div id="share-link">
+            <i class="fa fa-share"></i> share
+          </div>
+          <div id="share-panel" class="hidden">
+            <ul>
+              <li>
+                <a class="share" href="https://www.facebook.com/sharer/sharer.php?u=www.afterthesmokeclears.com.au" target="_blank">
+                  <i class="fa fa-facebook"></i> facebook
+                </a>
+              </li>
+
+              <li>
+                  <a class="share" href="http://www.twitter.com/share?url=www.afterthesmokeclears.com.au" target="_blank">
+                    <i class="fa fa-twitter"></i> twitter
+                  </a>
+              </li>
+              <li>
+                  <a class="share" href="mailto:?subject=Digital%20Storytelling%3A%20After%20The%20Smoke%20Clears&body=Have%20a%20look%20at%20After%20the%20Smoke%20Clears%20-%20a%20digital%20story%20about%20the%20Latrobe%20Valley%20in%20Victoria%2C%20Australia%20transitioning%20from%20coal%20to%20renewables.%0D%0A%0D%0AVisit%20at%20http%3A%2F%2Fwww.afterthesmokeclears.com.au" target="_blank">
+                    <i class="fa fa-envelope"></i> email
+                  </a>
+                </li>
+            </ul>
+          </div>
+      </div>
       <div class="article">
         <article>
           <h1>...but why?</h1>
@@ -136,10 +160,10 @@
         </div>
         <figcaption>
           <span class="quote">“…we have never seen anything like this,
-          not since I started drinking this morning anyways…”
+          feel the vibration…”
           </span>
           <br />
-          - Kurt Johnson, alcoholic</figcaption>
+          - Mark Wahlberg, actor</figcaption>
       </figure>
       <footer>
         <p>After the Smoke Clears was developed in partnership with 3CR radio and Beyond Zero Emissions Radio
@@ -148,12 +172,25 @@
           <!-- <a href="http://www.3cr.org.au/"><img src="images/3cr.png" /></a>
           <a href="http://bze.org.au/"><img src="images/bze.gif" /></a> -->
         <ul class="sharing">
-          <li><i class="fa fa-twitter-square"></i></li>
-          <li><i class="fa fa-facebook-square"></i></li>
-          <li><i class="fa fa-envelope"></i></li>
+          <li>
+              <a class="share" href="http://www.twitter.com/share?url=www.afterthesmokeclears.com.au" target="_blank">
+                <i class="fa fa-twitter-square"></i>
+              </a>
+          </li>
+          <li>
+            <a class="share" href="https://www.facebook.com/sharer/sharer.php?u=www.afterthesmokeclears.com.au" target="_blank">
+              <i class="fa fa-facebook-square"></i>
+            </a>
+          </li>
+          <li>
+              <a class="share" href="mailto:?subject=Digital%20Storytelling%3A%20After%20The%20Smoke%20Clears&body=Have%20a%20look%20at%20After%20the%20Smoke%20Clears%20-%20a%20digital%20story%20about%20the%20Latrobe%20Valley%20in%20Victoria%2C%20Australia%20transitioning%20from%20coal%20to%20renewables.%0D%0A%0D%0AVisit%20at%20http%3A%2F%2Fwww.afterthesmokeclears.com.au" target="_blank">
+                <i class="fa fa-envelope"></i>
+              </a>
+          </li>
         </ul>
       </footer>
       <script src="js/jquery-3.3.1.min.js"></script>
       <script src="js/map.js"></script>
+      <script src="js/main.js"></script>
   </body>
 </html>
