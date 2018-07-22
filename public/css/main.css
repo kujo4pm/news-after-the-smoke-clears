@@ -127,7 +127,7 @@ figure.wash .fig-quote {
 
 /* header */
 header {
-  background-image: url("../images/header-splash.png"); }
+  background-image: url("../images/header-splash.jpg"); }
 
 #header-text {
   position: absolute;
@@ -188,9 +188,10 @@ figure.interview {
   margin: 0;
   width: 100%;
   display: flex;
-  min-height: 105vh;
+  min-height: 100vh;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   flex-wrap: nowrap; }
 
 figure.interview figcaption {
@@ -206,7 +207,8 @@ figure.interview figcaption {
 
 .interview .video-container,
 .interview figcaption {
-  width: 50%; }
+  margin-right: 20%;
+  margin-left: 20%; }
 
 .interview figcaption {
   text-align: center;
@@ -233,43 +235,61 @@ figure.interview figcaption {
 /* nav */
 nav {
   padding: 20px 0 20px; }
-
-nav ul#episode-list {
-  display: flex;
-  align-items: stretch;
-  flex-direction: row;
-  font-family: 'PT Serif', serif;
-  color: #962E47;
-  text-align: right; }
-
-nav h1 {
-  margin-left: 20%;
-  margin-right: 20%; }
-
-nav div.thumb {
-  float: none;
-  padding-left: 0; }
-
-div.thumb img {
-  height: auto;
-  width: 100%; }
-
-nav li {
-  list-style-type: none;
-  margin: 1rem auto;
-  background-color: #fff;
-  max-width: 100%;
-  box-shadow: 0 2px 2px #DDDDDD;
-  width: 9.5rem; }
-
-nav h6.episode-kicker {
-  font-size: 0.6em;
-  padding: 1em 1em 0 0;
-  font-family: 'Poppins', sans-serif; }
-
-nav h2.episode-title {
-  font-size: 0.85em;
-  padding: 0 1em 0 0; }
+  nav ul#episode-list {
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    font-family: 'PT Serif', serif;
+    color: #962E47;
+    text-align: right; }
+  nav h1 {
+    margin-left: 20%;
+    margin-right: 20%; }
+  nav div.thumb {
+    float: none;
+    padding-left: 0; }
+  nav div.thumb img {
+    height: auto;
+    width: 100%; }
+  nav li {
+    list-style-type: none;
+    margin: 1rem auto;
+    background-color: #fff;
+    max-width: 100%;
+    box-shadow: 0 2px 2px #DDDDDD;
+    width: 9.5rem;
+    position: relative;
+    cursor: pointer; }
+    nav li .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: .25s ease;
+      background-color: #DDDDDD; }
+    nav li p {
+      color: #962E47;
+      font-family: 'Poppins', sans-serif;
+      position: absolute;
+      top: 25%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: center;
+      font-size: 0.7em; }
+    nav li h6.episode-kicker {
+      font-size: 0.6em;
+      padding: 1em 1em 0 0;
+      font-family: 'Poppins', sans-serif; }
+    nav li h2.episode-title {
+      font-size: 0.85em;
+      padding: 0 1em 0 0; }
+  nav li.coming-soon:hover .overlay {
+    opacity: 0.95; }
 
 @media only screen and (max-width: 768px) {
   nav li {
@@ -285,7 +305,9 @@ nav h2.episode-title {
   display: flex;
   flex-direction: column;
   align-content: center;
-  margin: 0; }
+  margin: 0;
+  position: relative;
+  pointer-events: none; }
 
 .map h1 {
   margin: 10px 20%; }
@@ -293,6 +315,25 @@ nav h2.episode-title {
 .map-pane {
   width: 100%;
   height: 90%; }
+
+.map-overlay-container {
+  position: absolute;
+  width: 25%;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  z-index: 1; }
+
+.map-overlay {
+  font: 1em 'PT Serif', serif;
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 10px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); }
+
+.map-overlay h2,
+.map-overlay p {
+  margin: 0 0 10px; }
 
 /* footer */
 footer {
