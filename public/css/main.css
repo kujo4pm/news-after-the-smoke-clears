@@ -339,15 +339,21 @@ nav {
 footer {
   height: 200px;
   background: #001030;
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   color: #DDDDDD;
   margin-top: 20px;
   font-family: 'PT Sans', sans-serif;
   font-size: 0.6em;
   border-top: #962E47 solid 2px;
   text-align: center; }
+  footer a {
+    color: inherit;
+    text-decoration: none; }
+  footer a :hover {
+    text-decoration: underline; }
 
 footer ul.sharing {
   list-style-type: none;
@@ -358,3 +364,27 @@ footer li {
   display: block;
   margin-left: 7px;
   width: 20px; }
+
+@media only screen and (max-width: 768px) {
+  footer {
+    flex-direction: column; } }
+
+/* mail subscribe */
+#mc_embed_signup {
+  clear: left;
+  font-family: 'PT Sans', sans-serif;
+  color: inherit;
+  margin-right: 40px;
+  align-items: left; }
+  #mc_embed_signup p {
+    margin-bottom: 5px; }
+  #mc_embed_signup input {
+    background-color: #001030;
+    color: inherit;
+    font-size: inherit;
+    border: 1px solid #DDDDDD; }
+  #mc_embed_signup .mc-field-group {
+    margin-bottom: 5px; }
+
+#mce-success-response, #mce-error-response {
+  display: none; }

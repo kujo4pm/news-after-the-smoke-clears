@@ -428,15 +428,23 @@ nav {
 footer {
   height: 200px;
   background: $black-blue;
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   color: $grey;
   margin-top: 20px;
   font-family: 'PT Sans', sans-serif;
   font-size: 0.6em;
   border-top: $wine solid 2px;
   text-align: center;
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  a :hover{
+    text-decoration: underline;
+  }
 }
 
 footer ul.sharing {
@@ -449,4 +457,32 @@ footer li {
   display: block;
   margin-left: 7px;
   width: 20px;
+}
+@media only screen and (max-width: 768px) {
+  footer {
+    flex-direction: column;
+  }
+}
+/* mail subscribe */
+#mc_embed_signup {
+  clear: left;
+  font-family: 'PT Sans', sans-serif;
+  color: inherit;
+  margin-right: 40px;
+  align-items: left;
+  p {
+    margin-bottom: 5px;
+  }
+  input {
+    background-color: $black-blue;
+    color: inherit;
+    font-size: inherit;
+    border: 1px solid $grey;
+  }
+  .mc-field-group {
+    margin-bottom: 5px;
+  }
+}
+#mce-success-response, #mce-error-response {
+  display: none;
 }
