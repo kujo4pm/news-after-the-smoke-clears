@@ -86,7 +86,7 @@ figure.wash figcaption {
   right: 0px;
   font-size: 0.8em;
   width: 25%;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.64);
   font-family: 'PT Sans', sans-serif;
   text-align: right;
   padding-right: 15px; }
@@ -129,6 +129,9 @@ figure.wash .fig-quote {
 header {
   background-image: url("../images/header-splash.jpg"); }
 
+header.history {
+  background-image: url("../images/header-splash-history.jpg"); }
+
 #header-text {
   position: absolute;
   bottom: 8px;
@@ -163,11 +166,11 @@ header {
   font-size: 0.8em; }
 
 #share-link:hover {
-  background: rgba(255, 255, 255, 0.4); }
+  background: rgba(255, 255, 255, 0.64); }
 
 #share-panel {
   display: flex;
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.64);
   font-size: 0.8em; }
 
 #share-panel ul {
@@ -284,10 +287,14 @@ nav {
     nav li h6.episode-kicker {
       font-size: 0.6em;
       padding: 1em 1em 0 0;
-      font-family: 'Poppins', sans-serif; }
+      font-family: 'Poppins', sans-serif;
+      text-decoration: underline #962E47;
+      color: #962E47; }
     nav li h2.episode-title {
       font-size: 0.85em;
-      padding: 0 1em 0 0; }
+      padding: 0 1em 0 0;
+      color: #962E47;
+      text-decoration: underline #962E47; }
   nav li.coming-soon:hover .overlay {
     opacity: 0.95; }
 
