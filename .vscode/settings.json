@@ -1,0 +1,34 @@
+{
+    "deploy": {
+        "packages": [
+            {
+                "name": "Version 2.3.4",
+                "description": "Package version 2.3.4",
+                "files": [
+                    "public/**",
+                ],
+                "exclude": [
+                    "public/video/**"
+                ],
+                "deployOnSave": false
+            }
+        ],
+        "targets": [
+            {
+                "type": "s3bucket",
+                "name": "Bucket for s3",
+                "bucket": "www.afterthesmokeclears.com.au",
+                "checkBeforeDeploy": true,
+                "credentials": {
+                    "type": "shared",
+                },
+                "mappings": [
+                    {
+                        "source": "/public",
+                        "target": "/"
+                    }
+                ]
+            }
+        ]
+    }
+}
