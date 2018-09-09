@@ -362,27 +362,41 @@ footer {
   footer a :hover {
     text-decoration: underline; }
 
-footer ul.sharing {
+footer ul.sharing,
+footer ul.logos {
   list-style-type: none;
   font-size: 1.6em;
-  display: flex; }
+  display: flex;
+  padding: 0px;
+  justify-content: center; }
 
-footer li {
+footer ul.sharing li {
   display: block;
   margin-left: 7px;
   width: 20px; }
 
+footer ul.sharing li:first-child {
+  display: block;
+  margin-left: 0px;
+  width: 20px; }
+
+footer a img.logo {
+  width: 60px;
+  height: 60px; }
+
+footer ul.logos li:first-child {
+  margin-right: 60px; }
+
 @media only screen and (max-width: 768px) {
   footer {
-    flex-direction: column; } }
+    flex-direction: column;
+    height: unset; } }
 
 /* mail subscribe */
 #mc_embed_signup {
   clear: left;
   font-family: 'PT Sans', sans-serif;
-  color: inherit;
-  margin-right: 40px;
-  align-items: left; }
+  color: inherit; }
   #mc_embed_signup p {
     margin-bottom: 5px; }
   #mc_embed_signup input {
