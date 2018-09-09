@@ -16,53 +16,70 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-      <header>
+      <header class="transition">
         <div id="header-text">
           <p id="header">After the Smoke Clears</p>
-          <p id="header-byline">the battle for energy in Victoria...</p>
+          <p id="header-byline">the battle for Victoria's energy...</p>
         </div>
       </header>
       <div id="share">
-          <div id="share-link">
-            <i class="fa fa-share"></i> share
-          </div>
-          <div id="share-panel" class="hidden">
-            <ul>
-              <li>
-                <a class="share" href="https://www.facebook.com/sharer/sharer.php?u=www.afterthesmokeclears.com.au" target="_blank">
-                  <i class="fa fa-facebook"></i> facebook
+        <div id="share-link">
+          <i class="fa fa-share"></i> share
+        </div>
+        <div id="share-panel" class="hidden">
+          <ul>
+            <li>
+              <a class="share" href="https://www.facebook.com/sharer/sharer.php?u=www.afterthesmokeclears.com.au" target="_blank">
+                <i class="fa fa-facebook"></i> facebook
+              </a>
+            </li>
+            <li>
+                <a class="share" href="http://www.twitter.com/share?url=www.afterthesmokeclears.com.au" target="_blank">
+                  <i class="fa fa-twitter"></i> twitter
+                </a>
+            </li>
+            <li>
+                <a class="share" href="mailto:?subject=Digital%20Storytelling%3A%20After%20The%20Smoke%20Clears&body=Have%20a%20look%20at%20After%20the%20Smoke%20Clears%20-%20a%20digital%20story%20about%20the%20Latrobe%20Valley%20in%20Victoria%2C%20Australia%20transitioning%20from%20coal%20to%20renewables.%0D%0A%0D%0AVisit%20at%20http%3A%2F%2Fwww.afterthesmokeclears.com.au" target="_blank">
+                  <i class="fa fa-envelope"></i> email
                 </a>
               </li>
-              <li>
-                  <a class="share" href="http://www.twitter.com/share?url=www.afterthesmokeclears.com.au" target="_blank">
-                    <i class="fa fa-twitter"></i> twitter
-                  </a>
-              </li>
-              <li>
-                  <a class="share" href="mailto:?subject=Digital%20Storytelling%3A%20After%20The%20Smoke%20Clears&body=Have%20a%20look%20at%20After%20the%20Smoke%20Clears%20-%20a%20digital%20story%20about%20the%20Latrobe%20Valley%20in%20Victoria%2C%20Australia%20transitioning%20from%20coal%20to%20renewables.%0D%0A%0D%0AVisit%20at%20http%3A%2F%2Fwww.afterthesmokeclears.com.au" target="_blank">
-                    <i class="fa fa-envelope"></i> email
-                  </a>
-                </li>
-            </ul>
-          </div>
+          </ul>
+        </div>
       </div>
+      <figure class="interview">
+        <h1>What is a Just Transition?</h1>
+        <div class="video-container">
+        <video
+          poster="./images/geoff-poster.png"
+          controls
+        >
+          <source type="video/mp4" src="./video/geoff-dyke-highlights.mp4"></source>
+        </video>
+        </div>
+        <figcaption>
+          <span class="quote">&ldquo;We certainly need some transition scheme&hellip;&rdquo;
+          </span>
+          <br />
+          - Geoff Dyke, Victorian CFMEU Secretary for Mining</figcaption>
+      </figure>
       <div class="article">
         <article>
-          <h1>Even positive change can be tricky...</h1>
-          <p>Banks worldwide are divesting from coal. There is a right way and a wrong way to manage the transition for towns built on coal. The wrong way means protracted unemployment and with an increase in rates of domestic violence, suicide and drug addiction - it means lives. It can also lead to political instability in the long-term. Australia is not immune to the same political forces we have seen overseas - forces that were crucial in the Brexit vote and the election of Donald Trump.</p>
-          <p>After the Smoke Clears is a five part radio series examining how the Latrobe Valley ends its reliance on coal and transitions to renewables. Broadcast on Melbourne station 3CR, then promoted nationally through Beyond Zero Emissions and 3CR, we investigate how a community grapples with the social, political and environmental fallout involved as a country meets its targets for the Paris Agreement.</p>
-          <aside>
-            <blockquote>
-              Australia is not immune to the same political forces that were crucial in the Brexit vote and the election of Donald Trump.
-            </blockquote>
-          </aside>
-          <p>After the Smoke Clears is timed to coincide with this year&rsquo;s Victorian election, to bridge the coal-rich mining towns with the vote-rich urban centres. It is part of a discussion to discover how the transition from coal can <i>best</i> be managed for everyone.</p>
-          <p>By drawing attention to some of the pioneering renewable projects being pursued in &lsquo;The Valley&rsquo;, After the Smoke Clears will also draw investment from urban centres into pilot schemes like micro-grids, community energy hubs and solar startups, creating local jobs.</p>
-        </article>
+          <h1>The German Example - Zollverein</h1>
+          <p>The Ruhr area in North Western area is Germany's coal mining heartland. Between 1997 to 2015 a partnership between government, industry and the unions oversaw the reduction of 72,820 jobs. Their credo and philosophy was "that no miner would be unemployed"</p>
+          <p><i>"But in the long run you have to look for an alternative for your country because the whole world is changing..."</i>
+          - Michael Mersmann, Director of Globalisation and European Policy, Union for Mining, Chemicals and Energy Workers</p>
+          <p><a href="https://ensia.com/features/german-transition-coal-renewable-energy/">Read more about it this article from Scientific American.</a></p>
       </div>
+      <figure class="wash">
+        <img
+          src="images/zollverein.jpeg"
+          alt="Winding Tower, Zollverein, Germany"
+        >
+        <figcaption>Winding Tower, Zollverein, Germany</figcaption>
+      </figure>
       <figure class="map">
-        <h1>Where is the Valley</h1>
-        <div class="map-pane" id="valley-map">
+        <h1>Where is the Zollverein?</h1>
+        <div class="map-pane" id="zollverein">
           <div class="map-overlay-container">
               <div class="map-overlay">
                 <h2 id="location-title"></h2>
@@ -71,32 +88,22 @@
             </div>
         </div>
       </figure>
-      <div class="article">
-        <article>
-          <h1>What seems to be the problem here?</h1>
-          <p>When power stations were privatized in the 90s beginning with Labor Leader Joan Kirner, then more aggressively under LNP’s Jeff Kennett jobs disappeared in the Valley. The whole region became economically depressed. By the closure of Hazelwood Power Station in March 2017 the adjacent town of Morwell achieved the highest level of unemployment in Victoria. Rates of drug abuse, domestic violence and suicide in the Valley are also amongst the state’s highest. The main street is a parade of For Lease signs.</p>
-          <figure class="article-image right">
-            <img
-              src="images/sideImage.jpg"
-              alt="Signs of a shrinking economy"
-            >
-            <figcaption>A town in transition</figcaption>
-          </figure>
-          <p>Despite large investment from state government these issues continue. There is also a feeling among some that politicians have abandoned them, preferring to court city votes. People are angry.</p>
-          <p>But this is a strong and resilient community that has pursued many innovative ideas to draw city dollars. It is time these ideas and these issues were investigated and explained, to provoke debate and discussion and hopefully stoke up some political will by politicians that have for too long overlooked the Valley.</p>
-        </article>
-      </div>
-      <figure class="wash">
-        <img
-          src="images/loy-yang.JPG"
-          alt="Loy Yang Power Station"
-        >
-        <div class="fig-quote"><i>&ldquo;people need to think seriously of a just and fairer transition of workers&rdquo;</i> - Mark Richards, Labor Candidate for Morwell</div>
-        <figcaption>Loy Yang Power Station</figcaption>
-      </figure>
+      </article>
       <nav>
         <h1>Episodes</h1>
         <ul id="episode-list">
+          <li>
+            <a href="./index.html">
+              <div class="thumb">
+                <img
+                  src="images/nav-home.jpg"
+                  alt="Home"
+                />
+              </div>
+              <h6 class="episode-kicker">Return</h6>
+              <h2 class="episode-title">Home</h2>
+            </a>
+          </li>
           <li>
             <a href="./part-one.html">
               <div class="thumb">
@@ -107,18 +114,6 @@
               </div>
               <h6 class="episode-kicker">PART 1</h6>
               <h2 class="episode-title">Wecome to the VALLEY</h2>
-            </a>
-          </li>
-          <li>
-            <a href="./part-two.html">
-              <div class="thumb">
-                <img
-                  src="images/nav-energy.jpg"
-                  alt="The Energy"
-                />
-              </div>
-              <h6 class="episode-kicker">PART 2</h6>
-              <h2 class="episode-title  ">What is a JUST TRANSITION?</h2>
             </a>
           </li>
           <li class="coming-soon">
@@ -216,7 +211,7 @@
       </footer>
       <script src="js/jquery-3.3.1.min.js"></script>
       <script src="js/map.js"></script>
-      <script lang="javascript">initMap("valley-map");</script>
+      <script lang="javascript">initMap("zollverein");</script>
       <script src="js/main.js"></script>
       <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us18.list-manage.com","uuid":"ff4a7e48944e0f086bf46199b","lid":"31e9ef37f9"}) })</script>
   </body>

@@ -132,6 +132,9 @@ header {
 header.history {
   background-image: url("../images/header-splash-history.jpg"); }
 
+header.transition {
+  background-image: url("../images/header-transition.jpg"); }
+
 #header-text {
   position: absolute;
   bottom: 8px;
