@@ -23,28 +23,49 @@
         </div>
       </header>
       <div id="share">
-          <div id="share-link">
-            <i class="fa fa-share"></i> share
-          </div>
-          <div id="share-panel" class="hidden">
-            <ul>
-              <li>
-                <a class="share" href="https://www.facebook.com/sharer/sharer.php?u=www.afterthesmokeclears.com.au" target="_blank">
-                  <i class="fa fa-facebook"></i> facebook
+        <div id="share-link">
+          <i class="fa fa-share"></i> share
+        </div>
+        <div id="share-panel" class="hidden">
+          <ul>
+            <li>
+              <a class="share" href="https://www.facebook.com/sharer/sharer.php?u=www.afterthesmokeclears.com.au" target="_blank">
+                <i class="fa fa-facebook"></i> facebook
+              </a>
+            </li>
+            <li>
+                <a class="share" href="http://www.twitter.com/share?url=www.afterthesmokeclears.com.au" target="_blank">
+                  <i class="fa fa-twitter"></i> twitter
+                </a>
+            </li>
+            <li>
+                <a class="share" href="mailto:?subject=Digital%20Storytelling%3A%20After%20The%20Smoke%20Clears&body=Have%20a%20look%20at%20After%20the%20Smoke%20Clears%20-%20a%20digital%20story%20about%20the%20Latrobe%20Valley%20in%20Victoria%2C%20Australia%20transitioning%20from%20coal%20to%20renewables.%0D%0A%0D%0AVisit%20at%20http%3A%2F%2Fwww.afterthesmokeclears.com.au" target="_blank">
+                  <i class="fa fa-envelope"></i> email
                 </a>
               </li>
-              <li>
-                  <a class="share" href="http://www.twitter.com/share?url=www.afterthesmokeclears.com.au" target="_blank">
-                    <i class="fa fa-twitter"></i> twitter
-                  </a>
-              </li>
-              <li>
-                  <a class="share" href="mailto:?subject=Digital%20Storytelling%3A%20After%20The%20Smoke%20Clears&body=Have%20a%20look%20at%20After%20the%20Smoke%20Clears%20-%20a%20digital%20story%20about%20the%20Latrobe%20Valley%20in%20Victoria%2C%20Australia%20transitioning%20from%20coal%20to%20renewables.%0D%0A%0D%0AVisit%20at%20http%3A%2F%2Fwww.afterthesmokeclears.com.au" target="_blank">
-                    <i class="fa fa-envelope"></i> email
-                  </a>
-                </li>
-            </ul>
+          </ul>
+        </div>
+      </div>
+      <div class="player-container">
+        <article>
+          <h1>Welcome to the Valley</h1>
+          <audio src="audio/AfterTheSmokeClearsEp1.mp3"></audio>
+          <div class="player">
+            <img src="images/nav-history.jpg"/>
+            <div class="info">
+              <div class="name">Episode 1</div>
+              <div class="title">Welcome to the Valley</div>
+            </div>
+            <div class="btns">
+                <i class="fa fa-play-circle play" id="play-pause"></i>
+                &nbsp;
+                <a href="audio/AfterTheSmokeClearsEp1.mp3" download="AfterTheSmokeClearsEp1.mp3"><i class="fa fa-download"></i></a>
+            </div>
+            <div class="progress">
+              
+            </div>
           </div>
+        </article>
       </div>
       <figure class="interview">
         <div class="video-container">
@@ -105,18 +126,17 @@
               <h2 class="episode-title">Home</h2>
             </a>
           </li>
-          <li class="coming-soon">
-            <div class="thumb">
-              <img
-                src="images/nav-energy.jpg"
-                alt="The Energy"
-              />
-            </div>
-            <h6 class="episode-kicker">PART 2</h6>
-            <h2 class="episode-title  ">What is a JUST TRANSITION?</h2>
-            <div class="overlay">
-              <p>Out on September 10</p>
-            </div>
+          <li>
+            <a href="./part-two.html">
+              <div class="thumb">
+                <img
+                  src="images/nav-energy.jpg"
+                  alt="The Energy"
+                />
+              </div>
+              <h6 class="episode-kicker">PART 2</h6>
+              <h2 class="episode-title  ">What is a JUST TRANSITION?</h2>
+            </a>
           </li>
           <li class="coming-soon">
             <div class="thumb">
@@ -160,9 +180,23 @@
         </ul>
       </nav>
       <footer>
-        <p>After the Smoke Clears was developed in partnership with <a href="http://www.3cr.org.au/">3CR</a> radio and <a href="http://bze.org.au/">Beyond Zero Emissions Radio</a>
-            <br />
-          All Rights Reserved: Kurt Johnson (c) 2018</p>
+        <div class="partners">
+          <p>After the Smoke Clears was developed in partnership with <a href="http://www.3cr.org.au/">3CR</a> radio and <a href="http://bze.org.au/">Beyond Zero Emissions Radio</a>
+              <br />
+            All Rights Reserved: Kurt Johnson (c) 2018</p>
+          <ul class="logos">
+            <li>
+              <a href="https://www.3cr.org.au/">
+                <img class="logo" src="images/3cr-logo.png" />
+              </a>
+            </li>
+            <li>
+              <a href="http://bze.org.au//">
+                <img class="logo" src="images/bze-logo.png" />
+              </a>
+            </li>
+          </ul>
+        </div>
         <ul class="sharing">
           <li>
               <a class="share" href="http://www.twitter.com/share?url=www.afterthesmokeclears.com.au" target="_blank">

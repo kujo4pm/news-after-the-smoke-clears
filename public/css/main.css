@@ -305,6 +305,60 @@ nav {
     flex-direction: column;
     margin: 20px; } }
 
+/* audio player */
+.player-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60%; }
+
+.player {
+  position: relative;
+  width: 100%;
+  background-color: #001030;
+  color: #DDDDDD;
+  display: flex;
+  border-radius: 2px;
+  padding: 5 16px; }
+  .player img {
+    height: 132px; }
+  .player .info {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    width: 50%;
+    padding: 0 16px;
+    font-family: 'Poppins', sans-serif; }
+    .player .info .name {
+      font-size: 15px;
+      font-weight: 700; }
+  .player .btns {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    font-size: 100px;
+    cursor: pointer; }
+  .player .btns a {
+    color: inherit; }
+  .player .progress {
+    position: absolute;
+    height: 2px;
+    left: 0;
+    top: 0;
+    background-color: #00a8ff; }
+
+@media only screen and (max-width: 768px) {
+  .player {
+    flex-direction: column;
+    margin: 20px;
+    width: unset; }
+    .player img {
+      height: unset; }
+  .btns {
+    width: 100%; } }
+
 /* map */
 .map {
   width: 100%;
