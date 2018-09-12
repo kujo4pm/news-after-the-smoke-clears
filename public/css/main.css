@@ -63,14 +63,6 @@ header {
 figure.wash {
   min-height: 110vh; }
 
-figure.wash,
-figure.video,
-header,
-figure.map {
-  -webkit-box-shadow: inset 0px -8px 7px 0px rgba(0, 0, 0, 0.74);
-  -moz-box-shadow: inset 0px -8px 7px 0px rgba(0, 0, 0, 0.74);
-  box-shadow: inset 0px -8px 7px 0px rgba(0, 0, 0, 0.74); }
-
 figure.wash, header {
   background-color: #000000;
   margin: 0 0 10px 0;
