@@ -50,6 +50,9 @@ aside blockquote {
   justify-content: center;
   min-height: 100%; }
 
+.references {
+  font-size: 0.6em; }
+
 /* images and video */
 figure.wash video {
   max-width: 100%;

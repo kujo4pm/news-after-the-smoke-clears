@@ -95,7 +95,6 @@ const initMap = (mapId) => {
     }
   ]
   } ;
-  debugger;
   const map = new mapboxgl.Map(initParams[mapId]);
 
 
