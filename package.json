@@ -19,7 +19,8 @@
   },
   "homepage": "https://github.com/kujo4pm/news-after-the-smoke-clears#readme",
   "devDependencies": {
-    "node-sass": "^4.9.0"
+    "node-sass": "^4.9.0",
+    "yarn": "^1.10.1"
   },
   "dependencies": {
     "aos": "^2.2.0",
