@@ -129,7 +129,8 @@ figure.wash .fig-quote {
 
 /* header */
 header {
-  background-image: url("../images/header-splash.jpg"); }
+  background-image: url("../images/header-splash.jpg");
+  color: #FFFFFF; }
 
 header.history {
   background-image: url("../images/header-splash-history.jpg"); }
@@ -137,12 +138,14 @@ header.history {
 header.transition {
   background-image: url("../images/header-transition.jpg"); }
 
+header.politics {
+  background-image: url("../images/header-splash-politics.jpg"); }
+
 #header-text {
   position: absolute;
   bottom: 8px;
   right: 16px;
   margin-top: 0px;
-  color: #FFFFFF;
   font-family: 'PT Sans', sans-serif; }
 
 #header {
