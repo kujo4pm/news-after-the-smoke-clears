@@ -26,6 +26,9 @@
                 "checkBeforeDeploy": true,
                 "credentials": {
                     "type": "shared",
+                    "config": {
+                        "profile": "default"
+                    },
                 },
                 "mappings": [
                     {
