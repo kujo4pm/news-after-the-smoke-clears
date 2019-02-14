@@ -141,6 +141,9 @@ header.transition {
 header.politics {
   background-image: url("../images/header-splash-politics.jpg"); }
 
+header.future {
+  background-image: url("../images/header-splash-future.jpg"); }
+
 #header-text {
   position: absolute;
   bottom: 8px;
